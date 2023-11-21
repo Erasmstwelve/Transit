@@ -1,0 +1,55 @@
+/* Estilos del bloque "offer" */
+.offer {
+	background-color: dimgray;
+	border-radius: 16px;
+	background-size: cover;
+
+	&__circle {
+		clip-path: ellipse(200% 200% at 180% 185%);
+		background-color: rgba(24, 24, 35, 0.50);
+		padding: 17px;
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+		border-radius: 16px;
+		transition: 0.5s;
+
+		&:hover {
+			clip-path: ellipse(300% 300% at 180% 185%);
+			transition: 0.5s;
+		}
+
+		.offer__title {
+			text-transform: capitalize;
+			font-weight: 700;
+			font-size: 28px;
+			color: white;
+			margin-bottom: 20px;
+		}
+
+		.offer__price {
+			color: white;
+			font-weight: 700;
+			font-size: 16px;
+			margin: 0;
+
+			span {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.bg1 {
+	background-image: url('../../../../assets/images/Manizales2.jpg');
+}
+
+.bg2 {
+	background-image: url('../../../../assets/images/unitede.jpg');
+}
+
+.bg3 {
+	background-image: url('../../../../assets/images/Italy.jpg');
+}

@@ -1,0 +1,139 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&__content {
+		.nav__menu {
+			width: 20px;
+		}
+
+		.nav__logo {
+			width: 103px;
+		}
+
+		.nav__lenguage {
+			width: 15px;
+		}
+	}
+}
+
+.navbar {
+	display: none;
+	transition: left 0.5s;
+	padding-top: 20px;
+	&__list{
+		list-style: none;
+		padding: 0;
+		.navbar__links{	
+			padding: 25px 0;
+
+			.navbar__link{
+				color: #181823;
+				text-decoration: none;
+				font-size: 20px;
+				font-weight: 400;
+			}
+		}
+
+		.navbar__links:nth-child(2){
+			border-top: 1px solid #B2B2C1;
+			border-bottom: 1px solid #B2B2C1;
+		}
+	}
+}
+
+.navbar, .info {
+	display: none;
+	padding-top: 20px;
+
+	&__list{
+		list-style: none;
+		padding: 0;
+
+		.navbar__links{	
+			padding: 25px 0;
+
+			.navbar__link{
+				color: #181823;
+				text-decoration: none;
+				font-size: 20px;
+				font-weight: 400;
+			}
+		}
+
+		.navbar__links:nth-child(2){
+			border-top: 1px solid #B2B2C1;
+			border-bottom: 1px solid #B2B2C1;
+		}
+	}
+
+  &.active {
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: white;
+		z-index: 999;
+		animation: fadeLeft 1s ease;
+  }
+
+	.info__title{
+		font-size: 20px;
+		font-weight: 700;
+		color: #181823;
+	}
+
+	.info__list{
+		list-style: none;
+		padding: 0;
+		.info__links{
+			padding: 9px 28px;
+			.info__link{
+				color: #181823;
+				text-decoration: none;
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+// .info{
+
+// 	.info__title{
+// 		font-size: 20px;
+// 		font-weight: 700;
+// 		color: #181823;
+// 	}
+
+// 	.info__list{
+// 		list-style: none;
+// 		padding: 0;
+// 		.info__links{
+// 			padding: 9px 28px;
+// 			.info__link{
+// 				color: #181823;
+// 				text-decoration: none;
+// 				font-size: 16px;
+// 				font-weight: 400;
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Mueve el elemento 50px hacia la izquierda */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Vuelve a la posición original */
+  }
+}

@@ -1,0 +1,60 @@
+.hero {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../../../../assets/images/sky.jpg');
+  background-size: cover;
+  background-position: top center;
+
+  
+  &__title {
+    font-weight: 700;
+    font-size: 58px;
+    margin: 0;
+    color: white;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+    width: 564px;
+    color: white;
+    margin-top: 6px;
+    margin-bottom: 36px;
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #C20114;
+    text-align: center;
+    width: 152px;
+    padding: 11px;
+    border-radius: 100px;
+  }
+}
+  
+@media (max-width:685px) {
+  .hero {
+    background-size: 400%;
+    height: 60vh;
+
+    &__title {
+      font-size: 32px;
+    }
+  
+    &__description {
+      font-size: 14px;
+      line-height: 16px;
+      width: 100%;
+    }
+  
+    &__button {
+      font-size: 18px;
+    }
+  }
+}

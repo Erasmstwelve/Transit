@@ -1,0 +1,48 @@
+<nav class="nav">
+	<div class="nav__content">
+		<a routerLink="/">
+			<img src="/assets/images/logo.png" alt="airline-to-the-people-logo" class="nav__logo">
+		</a>
+	</div>
+	<div class="nav__content">
+		<ul class="nav__list">
+			<li class="nav__links">
+				<a href="#" class="nav__link">Home</a>
+			</li>
+			<li class="nav__links" >
+				<a href="http://localhost:4200//about" class="nav__link">About Us</a>
+			</li>
+			<li class="nav__links" >
+				<a class="nav__link" (click)="toggleDropdown()">Info & Contact</a>
+				<ul class="nav__dropdownList" *ngIf="isOpen">
+					<li class="nav__links">
+						<a href="#" class="nav__link">
+							Help center
+						</a>
+					</li>
+					<li class="nav__links">
+						<a href="#" class="nav__link">
+							 News
+						</a>
+					</li>
+					<li class="nav__links">
+						<a href="#" class="nav__link">
+							Our Partners
+						</a>
+					</li>
+					<li class="nav__links">
+						<a href="#" class="nav__link">
+							Routes & Times
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="nav__content">
+		<img src="/assets/images/lenguage-icon.png" alt="lenguage-icon" class="nav__ico">
+		English
+	</div>
+</nav>
+
+  

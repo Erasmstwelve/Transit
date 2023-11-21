@@ -1,0 +1,12 @@
+app-nav-responsive{
+    display: none;
+}
+
+@media (max-width:685px) {
+    app-nav-responsive{
+        display: block;
+    }
+    app-navigation{
+        display: none;
+    }
+}

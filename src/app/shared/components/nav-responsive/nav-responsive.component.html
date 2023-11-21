@@ -1,0 +1,58 @@
+<div class="nav" >
+  <div class="nav__content" (click)="toggleNavbar()">
+    <img [src]="isImage1Active ? '/assets/images/bars.png' : '/assets/images/close.png'" alt="" class="nav__menu" />
+  </div>
+  <div class="nav__content">
+    <img src="/assets/images/logo.png" alt="" class="nav__logo" />
+  </div>
+  <div class="nav__content">
+    <img src="/assets/images/lenguage-icon.png" alt="" class="nav__lenguage" />
+  </div>
+</div>
+
+
+<div class="navbar content" [ngClass]="{'navbar': true, 'active': isNavbarOpen}">
+  <ul class="navbar__list">
+    <li class="navbar__links">
+      <a href="#" class="navbar__link"> 
+				Home
+			</a>
+    </li>
+    <li class="navbar__links">
+      <a href="http://localhost:4200//about" class="navbar__link">
+				About Us
+			</a>
+    </li>
+    <li class="navbar__links">
+      <a class="navbar__link" (click)="toggleinfo()"> 
+				Contact
+			</a>
+    </li>
+  </ul>
+</div>
+
+<div class="info content" [ngClass]="{ 'active': isInfoOpen}">
+  <h3 class="info__title">Information</h3>
+  <ul class="info__list">
+    <li class="info__links">
+      <a href="#" class="info__link"> 
+				Help center
+			</a>
+    </li>
+    <li class="info__links">
+      <a href="#" class="info__link"> 
+				Questions?
+			</a>
+    </li>
+    <li class="info__links">
+      <a href="#" class="info__link"> 
+        All about our own Bus
+			</a>
+    </li>
+    <li class="info__links">
+      <a href="#" class="info__link"> 
+				Map Of Routes
+			</a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,32 @@
+<router-outlet></router-outlet>
+
+<section>
+	<!-- Una sección que contiene el componente 'app-hero'. -->
+	<app-hero></app-hero>
+  </section>
+  
+  <section class="content content-top">
+	<!-- Otra sección con una clase CSS 'content' y 'content-top'. -->
+  
+	<h2>Offers</h2>
+	<!-- Un encabezado de nivel 2 que muestra el texto "Offers". -->
+  
+	<div class="offers">
+	  <!-- Un contenedor con la clase CSS 'offers'. -->
+  
+	  <app-offer [title]="'colombia'" [price]="700" [bg_image]="'bg1'" class="offers__secondary"></app-offer>
+	  <!-- Uso del componente 'app-offer' con propiedades de entrada. Se muestra un ejemplo de uso del componente con valores específicos. -->
+  
+	  <app-offer [title]="'Italy'" [price]="800" [bg_image]="'bg3'"  class="offers__primary"></app-offer>
+	  <!-- Uso del componente 'app-offer' con propiedades de entrada. Se muestra otro ejemplo de uso del componente con valores específicos. -->
+  
+	  <app-offer [title]="'United States'" [price]="1000" [bg_image]="'bg2'"  class="offers__secondary"></app-offer>
+	  <!-- Uso del componente 'app-offer' con propiedades de entrada. Se muestra otro ejemplo de uso del componente con valores específicos. -->
+	</div>
+  
+	<div>
+	  <app-cta></app-cta>
+	  <!-- Uso del componente 'app-cta'. -->
+	</div>
+  </section>
+  
